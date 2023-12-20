@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'skillforge'
           slot-name: 'Production'
-          package: '*.jar'
+          package: '${{ github.workspace }}/target/*.jar'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_67272A9294F34112A1588D889BF5204D }}
